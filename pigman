@@ -1,0 +1,49 @@
+from tkinter import *
+from tkinter.messagebox import showinfo
+
+root = Tk()
+
+groupbox_question = LabelFrame(master=root, text = 'Cau Hoi')
+groupbox_question.pack(expand=True, fill = BOTH)
+groupbox_answer = LabelFrame(master=root, text = 'Cac dap an')
+groupbox_answer.pack(expand=True, fill = BOTH)
+
+cb1 = BooleanVar()
+cb2 = BooleanVar()
+cb3 = BooleanVar()
+cb4 = BooleanVar()
+
+ckbnt1 = Checkbutton(groupbox_answer, variable = cb1, text="", onvalue=True, offvalue=False)
+ckbnt1.grid(row=0, column=0, padx=5,pady=5)
+
+ckbnt2 = Checkbutton(groupbox_answer, variable = cb2, text="", onvalue=True, offvalue=False)
+ckbnt2.grid(row=0, column=2, padx=5,pady=5)
+
+ckbnt3 = Checkbutton(groupbox_answer, variable = cb3, text="", onvalue=True, offvalue=False)
+ckbnt3.grid(row=1, column=0, padx=5,pady=5)
+
+ckbnt4 = Checkbutton(groupbox_answer, variable = cb4, text="", onvalue=True, offvalue=False)
+ckbnt4.grid(row=1, column=2, padx=5,pady=5)
+
+text_answer1 = Text(groupbox_answer, width=35, height=10)
+text_answer1.grid(row=0, column=1, padx=5, ipady=10)
+
+text_answer2 = Text(groupbox_answer, width=35, height=10)
+text_answer2.grid(row=0, column=3, padx=5, ipady=10)
+
+text_answer3 = Text(groupbox_answer, width=35, height=10)
+text_answer3.grid(row=1, column=1, padx=5, ipady=10)
+
+text_answer4 = Text(groupbox_answer, width=35, height=10)
+text_answer4.grid(row=1, column=3, padx=5, ipady=10)
+
+btn_previous = Button(groupbox_answer, text="Cau hoi truoc")
+btn_previous.grid(row=2,column=1)
+
+btn_next = Button(groupbox_answer, text = "Cau hoi sau")
+btn_next.grid(row=2,column=2)
+
+btn_confirm = Button(groupbox_answer, text = "Ket thuc")
+btn_confirm.grid(row=2, column=3)
+
+mainloop()

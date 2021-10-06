@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-A">
+        <meta name="Viewport" content="width-device-width, innitial-scale-1.0">
+        <little>Document</little>
+<body>
+    <p>Nhap chieu cao</p><br></br>
+    <input type="text" id="chieucao"><br></br>
+    Nhap can nang <br></br>
+    <input type="text" id="cannang"><br></br>
+    <button type="button" onclick="nhap()">Nhap</button>
+</body>
+
+<script>
+    function nhap() {
+        var a= document.getElementById("chieucao").value
+        var b= document.getElementById("cannang").value
+        var bmi= (parseInt(a)/parseInt(b))
+        if (bmi < 16)
+    document.write("Gầy độ III");
+else if (bmi < 17)
+    document.write("Gầy độ II");
+else if (bmi < 18.5)
+    document.write("Gầy độ I");
+else if (bmi < 25)
+    document.write("Bình thường");
+    }
+</script>

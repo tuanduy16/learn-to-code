@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-A">
+        <meta name="Viewport" content="width-device-width, innitial-scale-1.0">
+        <little>Document</little>
+    </head>
+<body>
+    <p>Tinh tong a va b</p><br></br>
+    Nhap a <br></br>
+    <input type="text" id="soa" >
+    <button type="button" onclick="soa">Nhap</button><br></br>
+    Nhap b <br></br>
+    <input type="text" id="sob" >
+    <button type="button" onclick="sob">Nhap</button>
+</body>
+</html>
+
+<script>
+    function Nhap {
+        var a =document.getElementById("soa").value
+        var b =document.getElementById("sob").value
+        var A=parseInt("a")
+        var B=parseInt("b")
+        if ((A+B)<4) { alert("Below")}
+        else {alert("over")}
+    }
+</script>

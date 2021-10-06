@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-A">
+    <meta name="Viewport" content="width-device-width, innitial-scale-1.0">
+</head>
+<body>
+    <p> Nhap nam duong<br></br>
+        <input id="nam" type="text">
+        <button id="nhap" type="button" onclick="nhap()">Nhap</button>
+    </p>
+    <script>
+        function nhap() {
+            var nam = parseInt(document.getElementById("nam").value)
+            var can = nam%10
+            var chi = nam%12
+            var a=''
+            var b=''
+        switch (can) {
+            case 0:
+            a='Canh';
+            break;
+            case 1:
+            a='Tan';
+            break; 
+            case 2: 
+            a='Nham';
+            break;
+            case 3: 
+            a='Quy';
+            break;
+            case 4:
+            a='Giap';
+            break;
+            case 5:
+            a='At';
+            break;
+            case 6: 
+            a='Binh';
+            break;
+            case 7: 
+            a='Dinh';
+            break;
+            case 8: 
+            a='Mau';
+            break;
+            case 9: 
+            a='Ky';
+            break;
+        }
+        switch (chi) {
+            case 0:
+            b='Than';
+            break;
+            case 1:
+            b='Dau';
+            break; 
+            case 2: 
+            b='Tuat';
+            break;
+            case 3: 
+            b='Hoi';
+            break;
+            case 4:
+            b='Ty';
+            break; 
+            case 5:
+            b='Suu';
+            break;
+            case 6: 
+            b='Dan';
+            break;
+            case 7: 
+            b='Meo';
+            break;
+            case 8: 
+            b='Thin';
+            break;
+            case 9: 
+            b='Ty';
+            break;
+            case 10: 
+            b='Ngo';
+            break;
+            case 11: 
+            b='Mui';
+            break;
+         }
+         alert( a + '' + b)
+    }
+       
+    </script>
+</body>
+</html>

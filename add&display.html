@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-A">
+    <meta name="Viewport" content="width-device-width, innitial-scale-1.0">
+</head>
+<body>
+    <input id="Nhap">
+    <button type="button" onclick="add()">ADD</button>
+    <button type="button" onclick="display()">DISPLAY</button>
+    <div id="nhap"></div>
+    <script>
+        var Array()= document.getElementbyId("Nhap").value 
+        function add() {
+            
+            Array.push(Array.length)
+        }
+        function display() {
+            var element=Array
+            Array.forEach(element => {
+                document.getElementById("nhap").innerHTML= Array               
+            });
+        }
+    </script>
+</body>
+</html>

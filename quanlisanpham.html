@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-A">
+    <meta name="Viewport" content="width-device-width, innitial-scale-1.0">
+</head>
+<body>
+    <p>Add New Product</p> <br></br>
+    <input id="nhap">
+    <button id="add" onclick="add()" type="button" style="background-color: tomato;">Add</button><br></br>
+    <p>Display all product</p><br></br><br></br>
+    <p>Product name</p>
+    <div id="product"></div> <button id="edit" onclick="edit()" type="button" style="background-color: tomato;">Edit</button>
+    <button id="delete" onclick="xoa()" type="button" style="background-color: tomato;">Delete</button>
+
+    <script>
+        function add() {
+            var product = document.getElementById("nhap").value 
+            document.getElementById("product").innerText=product
+
+        }
+    </script>
+</body>
+</html>

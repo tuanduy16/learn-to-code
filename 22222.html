@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-A">
+    <meta name="Viewport" content="width-device-width, innitial-scale-1.0">
+</head>
+<body>
+    <script>
+        var myArray= new Array()
+        for (let i = 0; i < 10 ; i++)  {
+            var input = parseInt(prompt("Nhap so bat ki"))
+            myArray.push(input);
+        }
+        var a= gtln(myArray)
+        var b= gtnn(myArray)
+        alert("Mang vua nhap vao la" + myArray)
+        alert("gia tri nho nhat la" + b)
+        alert("gia tri lon nhat la" + a)
+        function gtln(arr){
+            max = arr[0]
+            for (let a = 1; a < arr.length; a++) {
+                if (max < arr[a]) {
+                    max = arr[a]
+                }
+                return max
+            }       
+          function gtnn(arr){
+              min = arr[0]
+              for (let a= 1; a < arr.length; a++) {
+                  if (min>arr[a]) {
+                     min = arr[a] 
+                  }
+                return min  
+              }
+          }  
+        
+    }
+    </script>
+</body>
+</html>
